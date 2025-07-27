@@ -1,0 +1,89 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>IT Recruiter Application Form</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f4f4f4;
+      padding: 20px;
+    }
+    .container {
+      max-width: 600px;
+      margin: auto;
+      background: #fff;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+    h2 {
+      text-align: center;
+    }
+    label {
+      display: block;
+      margin: 15px 0 5px;
+    }
+    input[type="text"],
+    input[type="email"],
+    textarea,
+    select {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    textarea {
+      resize: vertical;
+    }
+    button {
+      margin-top: 20px;
+      width: 100%;
+      padding: 12px;
+      background: #007bff;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      font-size: 16px;
+    }
+    button:hover {
+      background: #0056b3;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>IT Recruiter Application Form</h2>
+    <form>
+      <label for="experience">1. Experience in IT recruitment (APAC):</label>
+      <textarea id="experience" name="experience" rows="3"></textarea>
+
+      <label for="tools">2. Sourcing tools/platforms used:</label>
+      <textarea id="tools" name="tools" rows="2"></textarea>
+
+      <label for="interview_process">3. Phone screening process and candidate evaluation:</label>
+      <textarea id="interview_process" name="interview_process" rows="3"></textarea>
+
+      <label for="salary">4. Current salary and expected salary (monthly):</label>
+      <input type="text" id="salary" name="salary">
+
+      <label for="notice">5. Notice period (in days):</label>
+      <input type="text" id="notice" name="notice">
+
+      <label for="remote">6. Willing to work remotely using own laptop for renewable contract?</label>
+      <select id="remote" name="remote">
+        <option value="Yes">Yes</option>
+        <option value="No">No</option>
+        <option value="Maybe">Maybe</option>
+      </select>
+
+      <label for="reporting">7. Recruitment reports or trackers maintained:</label>
+      <textarea id="reporting" name="reporting" rows="3"></textarea>
+
+      <button type="submit">Submit Application</button>
+    </form>
+  </div>
+</body>
+</html>
